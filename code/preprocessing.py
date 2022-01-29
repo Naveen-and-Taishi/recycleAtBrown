@@ -25,7 +25,7 @@ def get_data(data_path):
         for f in listdir(data_path + "/" + dir):
             new_img = Image.open(data_path + "/" + dir + "/" + f)
             new_img_data = np.asarray(new_img)
-            print(np.shape(new_img_data))
+            #print(np.shape(new_img_data))
             images.append(new_img_data)
             labels.append(label_idx)
         label_idx += 1
@@ -34,7 +34,7 @@ def get_data(data_path):
     shuffle_order = np.arange(len(images))
     np.random.shuffle(shuffle_order)
 
-    print(shuffle_order)
+    #print(shuffle_order)
 
     images = np.array(images)
     labels = np.array(labels)
