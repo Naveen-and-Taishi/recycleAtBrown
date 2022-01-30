@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/recycleatbrown/static/css/main.ea496a18.css",
-    "main.js": "/recycleatbrown/static/js/main.d462128e.js",
-    "static/js/787.be46968b.chunk.js": "/recycleatbrown/static/js/787.be46968b.chunk.js",
-    "index.html": "/recycleatbrown/index.html",
-    "main.ea496a18.css.map": "/recycleatbrown/static/css/main.ea496a18.css.map",
-    "main.d462128e.js.map": "/recycleatbrown/static/js/main.d462128e.js.map",
-    "787.be46968b.chunk.js.map": "/recycleatbrown/static/js/787.be46968b.chunk.js.map"
+    "main.css": "/recycleAtBrown/static/css/main.ea496a18.css",
+    "main.js": "/recycleAtBrown/static/js/main.526592bc.js",
+    "static/js/787.be46968b.chunk.js": "/recycleAtBrown/static/js/787.be46968b.chunk.js",
+    "index.html": "/recycleAtBrown/index.html",
+    "main.ea496a18.css.map": "/recycleAtBrown/static/css/main.ea496a18.css.map",
+    "main.526592bc.js.map": "/recycleAtBrown/static/js/main.526592bc.js.map",
+    "787.be46968b.chunk.js.map": "/recycleAtBrown/static/js/787.be46968b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ea496a18.css",
-    "static/js/main.d462128e.js"
+    "static/js/main.526592bc.js"
   ]
 }
