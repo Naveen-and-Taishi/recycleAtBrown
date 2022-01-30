@@ -6,7 +6,7 @@ import math
 from matplotlib import pyplot as plt
 from preprocessing import get_data
 from tensorflow.keras import Sequential
-from tensorflow.keras.layers import Dense, Flatten, Reshape
+from tensorflow.keras.layers import Dense, Flatten, Reshape, Dropout
 from tensorflow.math import exp, sqrt, square
 from tensorflow.keras.applications import ResNet50V2
 
@@ -17,10 +17,10 @@ class Referee(tf.keras.Model):
         self.num_classes = 6
         self.learning_rate = 0.00001
         self.decay_rate = 0.00000025
+        self.dropout_rate = 0.1
         self.optimizer = tf.keras.optimizers.Adam(learning_rate=self.learning_rate)
         self.batch_size = batch_size
         self.hidden_size = 128
-
 
         self.ResNet50 = ResNet50V2(include_top=False, 
             weights="imagenet",
@@ -31,7 +31,9 @@ class Referee(tf.keras.Model):
         self.referee = Sequential([
             Flatten(),
             Dense(self.hidden_size, activation="relu"),
+            Dropout(self.dropout_rate),
             Dense(self.hidden_size, activation="relu"),
+            Dropout(self.dropout_rate),
             Dense(6, activation="relu")
         ])
         pass
