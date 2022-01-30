@@ -68,6 +68,8 @@ def train(model, train_inputs, train_labels):
             print("batch: " + str(int(b / model.batch_size)))
             batch_inputs = train_inputs[b : b + model.batch_size]
             batch_labels = train_labels[b : b + model.batch_size]
+            batch_inputs = tf.convert_to_tensor(batch_inputs)
+            batch_labels = tf.convert_to_tensor(batch_labels)
             with tf.GradientTape() as tape:
                 logits = model.call(batch_inputs)
                 loss = model.loss(logits, batch_labels)
