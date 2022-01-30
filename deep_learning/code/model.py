@@ -86,7 +86,7 @@ class Referee(tf.keras.Model):
         return tf.reduce_mean(tf.cast(correct_predictions, tf.float32))
 
 def train(model, train_inputs, train_labels):
-    for epoch in range(5):
+    for epoch in range(1):
         print("EPOCH: " + str(epoch))
         for b in range(0, len(train_inputs), model.batch_size):
             print("batch: " + str(int(b / model.batch_size)))
@@ -135,6 +135,6 @@ def main():
 
     print("FINAL TESTING ACCURACY: " + str(final_acc))
 
-    tf.save_model.save(referee, "../models")
+    tf.saved_model.save(referee, "../models")
 if __name__ == '__main__':
     main()
