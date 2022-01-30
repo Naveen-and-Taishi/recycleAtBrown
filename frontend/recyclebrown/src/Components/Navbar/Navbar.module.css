@@ -1,8 +1,10 @@
 .navbar {
     color: #bc4b51;
     background-color: #f4e285;
+    margin: 0;
 }
 
 .h1 {
     color: black;
+    font-family: Barlow;
 }

@@ -7,6 +7,7 @@ function App() {
     <div className={styles.App}>
       <Navbar />
       <Dectector/>
+      <button className={styles.button}>GO</button>
     </div>
   );
 }

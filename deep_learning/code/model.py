@@ -112,5 +112,8 @@ def main():
 
     print("FINAL TESTING ACCURACY: " + str(final_acc))
 
+    # save model
+    tf.saved_model.save(referee, "../models")
+
 if __name__ == '__main__':
     main()
