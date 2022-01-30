@@ -1,7 +1,58 @@
-.detector {
-    height: 20rem;
-    background-color: #f4a259;
+.container {
+    height: 60vh;
     width: 40%;
+    justify-content: space-evenly;
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #64749c;
+}
+
+.imageCap {
+    flex-grow: 4;
+    margin: auto;
+    
+} 
+.gap {
+    flex-grow: 2;
+    color: #64749c;
+}
+.yourPhotos {
+    flex-grow: 4;
+    margin: auto;
     justify-content: center;
+}
+
+.photoContainer {
+    width: 35vw;
+    height: 30vh;
+    background-color: darkgray;
+    border-radius: 12px;
     margin: auto;
 }
+/* .imageBox {
+    margin: auto;
+} */
+.image {
+    height: 20vh;
+    width: 13vw;
+    margin: auto;
+    vertical-align: center;
+}
+
+.button{
+    display:inline-block;
+    padding:0.7em 1.7em;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:400;
+    color:#FFFFFF;
+    background-color:#5ebec4;
+    box-shadow:inset 0 -0.6em 1em -0.35em rgba(0,0,0,0.17),inset 0 0.6em 2em -0.3em rgba(255,255,255,0.15),inset 0 0 0em 0.05em rgba(255,255,255,0.12);
+    text-align:center;
+    position:relative;
+    font-family: Barlow;
+  }
